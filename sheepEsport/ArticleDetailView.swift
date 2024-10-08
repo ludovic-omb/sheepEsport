@@ -68,7 +68,7 @@ struct ArticleDetailView: View {
 struct ArticleDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let sampleArticle = Article(
-            title: "Sources - VALORANT: Derke set to join Vitality",
+            title: "Sources - VALORANT: Derke (Fnatic) set to join Vitality",
             imageUrl: URL(string: "https://www.sheepesports.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F9rqbl8zs%2Fproduction%2F9ec1db0fc3c9b3588113141824ba90255984fff2-2048x1365.jpg&w=3840&q=75")!,
             description: """
             Nikita Derke Sirmitev will join Vitality in VCT EMEA next year, according to Sheep Esports sources. Pending final signatures and documentation, Fnatic and Vitality reached a verbal agreement on Derke's buyout earlier today, allowing the player to move from one star-studded roster to another 
