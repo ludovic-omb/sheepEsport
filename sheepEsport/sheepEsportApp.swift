@@ -11,7 +11,9 @@ import SwiftUI
 struct sheepEsportApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Color(.black)
+                .ignoresSafeArea(.all)
+            ArticleView(articles: [])
         }
     }
 }

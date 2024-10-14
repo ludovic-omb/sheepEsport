@@ -34,7 +34,7 @@ struct ArticleDetailView: View {
 
                 // Métadonnées de l'article (auteur, date)
                 HStack {
-                    Text("Par Ludovic OMOMBO")
+                    Text("Ludovic OMOMBO")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
@@ -50,11 +50,11 @@ struct ArticleDetailView: View {
                     .lineSpacing(4)
 
                 // Ajout de quelques métadonnées ou catégories
-                Text("Source")
+                Text(article.origin.rawValue)
                     .font(.footnote)
                     .foregroundColor(.secondary)
                 
-                Text("Valorant")
+                Text(article.category.rawValue)
                     .font(.footnote)
                     .foregroundColor(.secondary)
             }
@@ -79,7 +79,7 @@ struct ArticleDetailView_Previews: PreviewProvider {
             """,
             dateArticle: .now,
             category: .valorant,
-            language: [.france],
+            languages: [.france],
             origin: .official
         )
         
