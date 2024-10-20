@@ -10,7 +10,7 @@ import SwiftUI
 struct Article: Identifiable {
     let id = UUID()
     let title: String
-    let image : String
+    let image : Image
     let description: String
     let dateArticle: Date
     let category: Category
@@ -61,7 +61,7 @@ enum Category: String {
 let articles = [
     Article(
         title: "G2 Mikyx: 'We'll keep pushing and working hard to win Worlds 2024'",
-        image: "Yike",
+        image: Image("Yike"),
         description: "In this interview, G2 Mikyx talks about the team's journey and their goals for the upcoming Worlds 2024.",
         dateArticle: Date(),
         category: .Lol,
@@ -71,7 +71,7 @@ let articles = [
     
     Article(
         title: "Team Liquid signs a new roster for Valorant Champions 2024",
-        image: "Jojopyun",
+        image: Image("Jojopyun"),
         description: "Sources confirm that Team Liquid has signed a new roster to compete in Valorant Champions 2024.",
         dateArticle: Date(),
         category: .valorant,

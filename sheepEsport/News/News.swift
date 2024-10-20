@@ -16,7 +16,7 @@ var body: some View {
                         NavigationLink {
                             ArticleDetailView(article: article)
                         } label: {
-                            ArticleView(articles: articles)
+                            ArticleView(article: [])
                         }
                         .navigationTitle("News")
                         .padding(.horizontal)
