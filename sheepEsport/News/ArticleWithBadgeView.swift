@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ArticleWithBadgeView: View {
-    let imageUrl: URL
+    let image: Image
     let title: String
     let isNew: Bool
     let isUpdated: Bool
@@ -18,14 +18,9 @@ struct ArticleWithBadgeView: View {
         VStack(alignment: .leading, spacing: 10) {
             // Article contenu avec image et titre
             HStack(spacing: 10) {
-                AsyncImage(url: imageUrl) { image in
-                    image
+                Image("\(article.image)")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 100, height: 60)
-                        .cornerRadius(8)
-                } placeholder: {
-                    Color.gray
                         .frame(width: 100, height: 60)
                         .cornerRadius(8)
                 }
@@ -62,7 +57,6 @@ struct ArticleWithBadgeView: View {
         .background(Color.black) // Fond noir
         .cornerRadius(10)
     }
-}
 
 // Fonction pour déterminer si un article est nouveau ou mis à jour
 func checkIfNew(article: Article) -> Bool {
@@ -87,7 +81,7 @@ struct ArticleWithBadgeView_Previews: PreviewProvider {
         VStack(spacing: 20) {
             // Exemple d'un article nouveau
             ArticleWithBadgeView(
-                imageUrl: URL(string: "https://www.sheepesports.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F9rqbl8zs%2Fproduction%2F2c67beb7d5b385a73b79cc0bb08d3a86bff0ee4d-1600x900.webp&w=1920&q=75")!,
+                image: "Jojopyun",
                 title: "Sources: Ice, nuc set to re-sign with Team BDS",
                 isNew: true,
                 isUpdated: false
@@ -95,7 +89,7 @@ struct ArticleWithBadgeView_Previews: PreviewProvider {
             
             // Exemple d'un article mis à jour
             ArticleWithBadgeView(
-                imageUrl: URL(string: "https://www.sheepesports.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F9rqbl8zs%2Fproduction%2F2e83b6778c3be42970c71ea733cbb354290c3f00-1920x1080.jpg&w=1920&q=75")!,
+                image: "Yike",
                 title: "Sources: TheRock set to join Karmine Corp Blue in LFL, as Head Coach",
                 isNew: false,
                 isUpdated: true

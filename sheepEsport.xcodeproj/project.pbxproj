@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AEE020EB2CC5812700CCF793 /* loadingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE020EA2CC5811800CCF793 /* loadingPage.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AE6CEE5F2CA2BE1400464E41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		AE6CEE4E2CA2BE1200464E41 /* sheepEsport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sheepEsport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6CEE5E2CA2BE1400464E41 /* sheepEsportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sheepEsportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6CEE682CA2BE1400464E41 /* sheepEsportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sheepEsportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE020EA2CC5811800CCF793 /* loadingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +84,7 @@
 				AE6CEE612CA2BE1400464E41 /* sheepEsportTests */,
 				AE6CEE6B2CA2BE1400464E41 /* sheepEsportUITests */,
 				AE6CEE4F2CA2BE1200464E41 /* Products */,
+				AEE020EA2CC5811800CCF793 /* loadingPage.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE020EB2CC5812700CCF793 /* loadingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

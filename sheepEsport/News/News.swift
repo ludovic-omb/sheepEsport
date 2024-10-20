@@ -11,14 +11,16 @@ var body: some View {
     NavigationStack {
         VStack(alignment: .leading, spacing: 10) {
             ScrollView {
-                ForEach(articles) { article in
-                    NavigationLink {
-                        ArticleDetailView(article: article)
-                    } label: {
-                        ArticleView(articles: [Article])
+                List {
+                    ForEach(articles) { article in
+                        NavigationLink {
+                            ArticleDetailView(article: article)
+                        } label: {
+                            ArticleView(articles: articles)
+                        }
+                        .navigationTitle("News")
+                        .padding(.horizontal)
                     }
-                    .navigationTitle("News")
-                    .padding(.horizontal)
                 }
             }
         }
