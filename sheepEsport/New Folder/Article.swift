@@ -23,6 +23,7 @@ enum Origin: String {
     case interview = "Interview"
     case leak = "Leak"
     case official = "Official"
+
 }
 
 enum Flag {
@@ -31,6 +32,7 @@ enum Flag {
     case japan
     case spain
     case southKorea
+    case china
     var image : Image {
         switch self {
 
@@ -44,6 +46,8 @@ enum Flag {
             return Image(systemName: "flag.spain")
         case .southKorea:
             return Image(systemName: "flag.southkorea")
+        case .china:
+            return Image(systemName: "flag.china")
         }
     }
 }
